@@ -634,6 +634,14 @@
 							<td>git rebase <strong>-i HEAD~{3}</strong></td>
 							<td>Chạy lại lịch sử 3 commit trên nhánh hiện tại</td>
 						</tr>
+						<tr>
+							<td>3</td>
+							<td>git rebase <strong>-i -r --onto [commit-id-dest] [commit-id-source]</strong></td>
+							<td>Chạy lại lịch sử từ commit-id-source đến commit-id-dest trên nhánh gốc<br />
+								-i: --interactive
+								-r: --reword
+							</td>
+						</tr>
 
 						<!-- REVERT : START -->
 						<tr>
@@ -728,7 +736,7 @@
 						</tr>
 						<tr>
 							<td>5</td>
-							<td><strong>wq</strong></td>
+							<td><strong>wq | x!</strong></td>
 							<td>Lưu và thoát khỏi vim</td>
 						</tr>
 						<tr>
